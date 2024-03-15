@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# TracySRA
+# Tracy SRA
 
 This project is a search engine for SRA metadata on NCBI. It consists of two parts: a frontend Vue application and a backend Flask application.
 
