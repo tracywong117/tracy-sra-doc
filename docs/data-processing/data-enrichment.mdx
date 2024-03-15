@@ -1,0 +1,121 @@
+---
+sidebar_position: 4
+---
+
+# 4. Data Enrichment
+	## 4.1 Extract and enrich region (country/ country: city) and geographical location (lat, lon) information
+	### Analysis 
+	  `country = row.get("geo_loc_name_sam", [""])[0] if row.get("geo_loc_name_sam") else row.get("geo_loc_name_country_calc", "")`  
+	    
+	  `geo_loc_name_country_calc`  
+	    
+	| | **geo_loc_name_country_calc** | **count_entity** |
+	|---|---|---|
+	| 1 | null | 11149743 |
+	| 2 | USA | 6125770 |
+	| 3 | United Kingdom | 3108459 |
+	| 4 | uncalculated | 2067001 |
+	| 5 | China | 1438227 |
+	| 6 | Canada | 330030 |
+	| 7 | Australia | 275692 |
+	| 8 | Germany | 236836 |
+	| 9 | Japan | 233636 |
+	  ...  
+	    
+	  `geo_loc_name_sam`  
+	    
+	```sql
+	  SELECT DISTINCT ARRAY_LENGTH(geo_loc_name_sam) as length, count(*) AS count_entity
+	  FROM `nih-sra-datastore.sra.metadata`
+	  GROUP BY length
+	  ORDER BY count_entity DESC;
+	```
+	    
+	| | **length** | **count_entity** |
+	|---|---|---|
+	| 1 | 0 | 15469497 |
+	| 2 | 1 | 12663128 |
+	    
+	| | **geo_loc_name_sam** | **count_entity** |
+	|---|---|---|
+	| 1 | | 15469497 |
+	| 2 | missing | 1272361 |
+	| 3 | USA | 748202 |
+	| 4 | USA: California | 610694 |
+	| 5 | not applicable | 326638 |
+	| 6 | USA: Colorado | 267877 |
+	| 7 | USA: Massachusetts | 199052 |
+	| 8 | China | 197794 |
+	| 9 | USA: Texas | 168851 |
+	  ...  
+	    
+	```sql
+	  SELECT COUNT(*) AS count_entity
+	  FROM `nih-sra-datastore.sra.metadata`
+	  WHERE (ARRAY_TO_STRING(geo_loc_name_sam, '') = '' or LOWER(ARRAY_TO_STRING(geo_loc_name_sam, '')) LIKE "na" OR LOWER(ARRAY_TO_STRING(geo_loc_name_sam, '')) LIKE "not%" OR LOWER(ARRAY_TO_STRING(geo_loc_name_sam, '')) LIKE "missing")
+	  ORDER BY count_entity DESC;
+	```
+	```
+  17294634
+  ```
+
+	- `geo_loc_name_sam` has more detail on the region.
+	- Total records: 28132625
+	- Number of records without `geo_loc_name_sam`: 17294634
+
+	Can use `geo_loc_name_country_calc` to replace `geo_loc_name_sam`:
+	```sql
+	  SELECT COUNT(*) AS count_entity
+	  FROM `nih-sra-datastore.sra.metadata`
+	  WHERE (ARRAY_TO_STRING(geo_loc_name_sam, '') = '' or LOWER(ARRAY_TO_STRING(geo_loc_name_sam, '')) LIKE "na" OR LOWER(ARRAY_TO_STRING(geo_loc_name_sam, '')) LIKE "not%" OR LOWER(ARRAY_TO_STRING(geo_loc_name_sam, '')) LIKE "missing")
+	  AND NOT(geo_loc_name_country_calc LIKE "uncalculated" or geo_loc_name_country_calc IS NULL)
+	  ORDER BY count_entity DESC;
+	```
+	```
+  4236366
+  ```
+
+	Number of records need to be inferred 13058268
+	#### Infer region information
+	Link records to study_records by `sra_study` and `PRIMARY_ID`
+	```sql
+	  SELECT DISTINCT sra_study, COUNT(*) AS count_entity
+	  FROM `nih-sra-datastore.sra.metadata`
+	  WHERE (ARRAY_TO_STRING(geo_loc_name_sam, '') = '' or LOWER(ARRAY_TO_STRING(geo_loc_name_sam, '')) LIKE "na" OR LOWER(ARRAY_TO_STRING(geo_loc_name_sam, '')) LIKE "not%" OR LOWER(ARRAY_TO_STRING(geo_loc_name_sam, '')) LIKE "missing")
+	  AND (geo_loc_name_country_calc LIKE "uncalculated" or geo_loc_name_country_calc IS NULL)
+	  GROUP BY sra_study
+	  ORDER BY count_entity DESC;
+	```
+	    
+	| Row | **sra_study** | **count_entity** |
+	|---|---|---|
+	| 1 | ERP000190 | 145780 |
+	| 2 | SRP131661 | 99868 |
+	| 3 | ERP000195 | 98098 |
+	| 4 | ERP013950 | 85608 |
+	| 5 | SRP405951 | 75433 |
+	  ...  
+	  Number of rows: 265960
+	    
+	  Theoretically, number of records that region information can't be inferred: 20117 (records that do not have study record)  
+	## 4.2 Extract and enrich organism == 'Metagenome'
+	## 4.3 MeSH Terms Indexing
+	    
+	| Categories | Tree number |
+	|---|---|
+	| Anatomy | A |
+	| Organisms | B |
+	| Diseases | C |
+	| Chemicals and Drugs | D |
+	| Analytical, Diagnostic and Therapeutic Techniques, and Equipment | E |
+	| Psychiatry and Psychology | F |
+	| Phenomena and Processes | G |
+	| Disciplines and Occupations | H |
+	| Anthropology, Education, Sociology and Social Phenomena | I |
+	| Technology, Industry, and Agriculture | J |
+	| Humanities | K |
+	| Information Sciecne | L |
+	| Names Groups | M |
+	| Health Care | N |
+	| Publication Characteristics | V |
+	| Geographicals | Z |
