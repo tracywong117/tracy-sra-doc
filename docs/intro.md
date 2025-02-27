@@ -165,7 +165,5 @@ sudo cp /etc/letsencrypt/live/mg-db.org/privkey.pem .
 ## TODO
 - [ ] Enhance the startup.sh script that can recover from error
 - [ ] Deploy the Flask Backend with a production WSGI server
-  - [ ] use nginx reverse proxy
-- [ ] Fix the bug of missing one image folder
 
 
