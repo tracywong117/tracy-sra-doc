@@ -12,6 +12,5 @@ sidebar_position: 2
   ```
 - Save to `all-study.csv`
 - Load csv file into dataframe `df = pd.read_csv('all-study.csv', lineterminator='\n')`  
-- Python script is available in `/script/extract_study.ipynb`
-- Number of study records: 465111
+
 
