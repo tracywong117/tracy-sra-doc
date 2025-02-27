@@ -16,6 +16,7 @@ SELECT * EXCEPT(jattr)
 FROM `nih-sra-datastore.sra.metadata`
 );
 ```
+
 ## 1.2 Download data in batch from GCP bucket
 1. Install gcloud CLI  
    https://cloud.google.com/sdk/docs/install  
