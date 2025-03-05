@@ -1,0 +1,27 @@
+{
+  "id": "data-processing/useful-data",
+  "title": "3. Useful Data",
+  "description": "3.1 Taxonomy",
+  "source": "@site/docs/data-processing/useful-data.md",
+  "sourceDirName": "data-processing",
+  "slug": "/data-processing/useful-data",
+  "permalink": "/tracy-sra-doc/docs/data-processing/useful-data",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/tracywong117/tracy-sra-doc/tree/main/docs/data-processing/useful-data.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "2. Download study data",
+    "permalink": "/tracy-sra-doc/docs/data-processing/download-study-data"
+  },
+  "next": {
+    "title": "4. Data Curation",
+    "permalink": "/tracy-sra-doc/docs/data-processing/data-curation"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "data-processing/download-ncbi-sra-metadata",
+  "title": "1. Download NCBI SRA metadata from BigQuery",
+  "description": "1.1 Export data from BigQuery to GCP bucket",
+  "source": "@site/docs/data-processing/download-ncbi-sra-metadata.md",
+  "sourceDirName": "data-processing",
+  "slug": "/data-processing/download-ncbi-sra-metadata",
+  "permalink": "/tracy-sra-doc/docs/data-processing/download-ncbi-sra-metadata",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/tracywong117/tracy-sra-doc/tree/main/docs/data-processing/download-ncbi-sra-metadata.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Data Processing",
+    "permalink": "/tracy-sra-doc/docs/category/data-processing"
+  },
+  "next": {
+    "title": "2. Download study data",
+    "permalink": "/tracy-sra-doc/docs/data-processing/download-study-data"
+  }
+}

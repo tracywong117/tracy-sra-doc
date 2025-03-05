@@ -1,0 +1,27 @@
+{
+  "id": "data-processing/download-study-data",
+  "title": "2. Download study data",
+  "description": "Extract data from metastudyset.xml (~5 mins)",
+  "source": "@site/docs/data-processing/download-study-data.md",
+  "sourceDirName": "data-processing",
+  "slug": "/data-processing/download-study-data",
+  "permalink": "/tracy-sra-doc/docs/data-processing/download-study-data",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/tracywong117/tracy-sra-doc/tree/main/docs/data-processing/download-study-data.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "1. Download NCBI SRA metadata from BigQuery",
+    "permalink": "/tracy-sra-doc/docs/data-processing/download-ncbi-sra-metadata"
+  },
+  "next": {
+    "title": "3. Useful Data",
+    "permalink": "/tracy-sra-doc/docs/data-processing/useful-data"
+  }
+}

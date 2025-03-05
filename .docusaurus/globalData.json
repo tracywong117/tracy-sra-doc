@@ -1,0 +1,58 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/tracy-sra-doc/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/tracy-sra-doc/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "data-processing/data-curation",
+              "path": "/tracy-sra-doc/docs/data-processing/data-curation",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "data-processing/download-ncbi-sra-metadata",
+              "path": "/tracy-sra-doc/docs/data-processing/download-ncbi-sra-metadata",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "data-processing/download-study-data",
+              "path": "/tracy-sra-doc/docs/data-processing/download-study-data",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "data-processing/useful-data",
+              "path": "/tracy-sra-doc/docs/data-processing/useful-data",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/tracy-sra-doc/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/data-processing",
+              "path": "/tracy-sra-doc/docs/category/data-processing",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/tracy-sra-doc/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

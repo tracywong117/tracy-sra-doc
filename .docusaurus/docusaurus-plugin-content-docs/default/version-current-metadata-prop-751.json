@@ -1,0 +1,90 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "link",
+        "label": "Tracy SRA",
+        "href": "/tracy-sra-doc/docs/intro",
+        "docId": "intro",
+        "unlisted": false
+      },
+      {
+        "type": "category",
+        "label": "Data Processing",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "1. Download NCBI SRA metadata from BigQuery",
+            "href": "/tracy-sra-doc/docs/data-processing/download-ncbi-sra-metadata",
+            "docId": "data-processing/download-ncbi-sra-metadata",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "2. Download study data",
+            "href": "/tracy-sra-doc/docs/data-processing/download-study-data",
+            "docId": "data-processing/download-study-data",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "3. Useful Data",
+            "href": "/tracy-sra-doc/docs/data-processing/useful-data",
+            "docId": "data-processing/useful-data",
+            "unlisted": false
+          },
+          {
+            "type": "link",
+            "label": "4. Data Curation",
+            "href": "/tracy-sra-doc/docs/data-processing/data-curation",
+            "docId": "data-processing/data-curation",
+            "unlisted": false
+          }
+        ],
+        "href": "/tracy-sra-doc/docs/category/data-processing"
+      }
+    ]
+  },
+  "docs": {
+    "data-processing/data-curation": {
+      "id": "data-processing/data-curation",
+      "title": "4. Data Curation",
+      "description": "4.1 Attribute Key Curation",
+      "sidebar": "tutorialSidebar"
+    },
+    "data-processing/download-ncbi-sra-metadata": {
+      "id": "data-processing/download-ncbi-sra-metadata",
+      "title": "1. Download NCBI SRA metadata from BigQuery",
+      "description": "1.1 Export data from BigQuery to GCP bucket",
+      "sidebar": "tutorialSidebar"
+    },
+    "data-processing/download-study-data": {
+      "id": "data-processing/download-study-data",
+      "title": "2. Download study data",
+      "description": "Extract data from metastudyset.xml (~5 mins)",
+      "sidebar": "tutorialSidebar"
+    },
+    "data-processing/useful-data": {
+      "id": "data-processing/useful-data",
+      "title": "3. Useful Data",
+      "description": "3.1 Taxonomy",
+      "sidebar": "tutorialSidebar"
+    },
+    "intro": {
+      "id": "intro",
+      "title": "Tracy SRA",
+      "description": "This project is a search engine for SRA metadata on NCBI. It consists of two parts: a frontend Vue application and a backend Flask application.",
+      "sidebar": "tutorialSidebar"
+    }
+  }
+}

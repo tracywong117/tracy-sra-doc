@@ -1,0 +1,23 @@
+{
+  "id": "intro",
+  "title": "Tracy SRA",
+  "description": "This project is a search engine for SRA metadata on NCBI. It consists of two parts: a frontend Vue application and a backend Flask application.",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/tracy-sra-doc/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/tracywong117/tracy-sra-doc/tree/main/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Data Processing",
+    "permalink": "/tracy-sra-doc/docs/category/data-processing"
+  }
+}

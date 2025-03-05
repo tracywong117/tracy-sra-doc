@@ -1,0 +1,23 @@
+{
+  "id": "data-processing/data-curation",
+  "title": "4. Data Curation",
+  "description": "4.1 Attribute Key Curation",
+  "source": "@site/docs/data-processing/data-curation.md",
+  "sourceDirName": "data-processing",
+  "slug": "/data-processing/data-curation",
+  "permalink": "/tracy-sra-doc/docs/data-processing/data-curation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/tracywong117/tracy-sra-doc/tree/main/docs/data-processing/data-curation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "3. Useful Data",
+    "permalink": "/tracy-sra-doc/docs/data-processing/useful-data"
+  }
+}

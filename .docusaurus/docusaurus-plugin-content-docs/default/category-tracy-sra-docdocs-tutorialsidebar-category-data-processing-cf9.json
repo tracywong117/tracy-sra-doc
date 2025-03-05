@@ -1,0 +1,16 @@
+{
+  "title": "Data Processing",
+  "description": "Prepare the SRA metadata",
+  "slug": "/category/data-processing",
+  "permalink": "/tracy-sra-doc/docs/category/data-processing",
+  "navigation": {
+    "previous": {
+      "title": "Tracy SRA",
+      "permalink": "/tracy-sra-doc/docs/intro"
+    },
+    "next": {
+      "title": "1. Download NCBI SRA metadata from BigQuery",
+      "permalink": "/tracy-sra-doc/docs/data-processing/download-ncbi-sra-metadata"
+    }
+  }
+}

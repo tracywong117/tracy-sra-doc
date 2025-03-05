@@ -1,0 +1,227 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/tracy-sra-doc/docs",
+          "tagsPath": "/tracy-sra-doc/docs/tags",
+          "editUrl": "https://github.com/tracywong117/tracy-sra-doc/tree/main/docs",
+          "editUrlLocalized": "https://github.com/tracywong117/tracy-sra-doc/tree/main/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/Users/tracywong/tracy-sra-doc/sidebars.js",
+          "contentPath": "/Users/tracywong/tracy-sra-doc/docs",
+          "contentPathLocalized": "/Users/tracywong/tracy-sra-doc/i18n/en/docusaurus-plugin-content-docs/current",
+          "docs": [
+            {
+              "id": "data-processing/data-curation",
+              "title": "4. Data Curation",
+              "description": "4.1 Attribute Key Curation",
+              "source": "@site/docs/data-processing/data-curation.md",
+              "sourceDirName": "data-processing",
+              "slug": "/data-processing/data-curation",
+              "permalink": "/tracy-sra-doc/docs/data-processing/data-curation",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/tracywong117/tracy-sra-doc/tree/main/docs/data-processing/data-curation.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "3. Useful Data",
+                "permalink": "/tracy-sra-doc/docs/data-processing/useful-data"
+              }
+            },
+            {
+              "id": "data-processing/download-ncbi-sra-metadata",
+              "title": "1. Download NCBI SRA metadata from BigQuery",
+              "description": "1.1 Export data from BigQuery to GCP bucket",
+              "source": "@site/docs/data-processing/download-ncbi-sra-metadata.md",
+              "sourceDirName": "data-processing",
+              "slug": "/data-processing/download-ncbi-sra-metadata",
+              "permalink": "/tracy-sra-doc/docs/data-processing/download-ncbi-sra-metadata",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/tracywong117/tracy-sra-doc/tree/main/docs/data-processing/download-ncbi-sra-metadata.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Data Processing",
+                "permalink": "/tracy-sra-doc/docs/category/data-processing"
+              },
+              "next": {
+                "title": "2. Download study data",
+                "permalink": "/tracy-sra-doc/docs/data-processing/download-study-data"
+              }
+            },
+            {
+              "id": "data-processing/download-study-data",
+              "title": "2. Download study data",
+              "description": "Extract data from metastudyset.xml (~5 mins)",
+              "source": "@site/docs/data-processing/download-study-data.md",
+              "sourceDirName": "data-processing",
+              "slug": "/data-processing/download-study-data",
+              "permalink": "/tracy-sra-doc/docs/data-processing/download-study-data",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/tracywong117/tracy-sra-doc/tree/main/docs/data-processing/download-study-data.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "1. Download NCBI SRA metadata from BigQuery",
+                "permalink": "/tracy-sra-doc/docs/data-processing/download-ncbi-sra-metadata"
+              },
+              "next": {
+                "title": "3. Useful Data",
+                "permalink": "/tracy-sra-doc/docs/data-processing/useful-data"
+              }
+            },
+            {
+              "id": "data-processing/useful-data",
+              "title": "3. Useful Data",
+              "description": "3.1 Taxonomy",
+              "source": "@site/docs/data-processing/useful-data.md",
+              "sourceDirName": "data-processing",
+              "slug": "/data-processing/useful-data",
+              "permalink": "/tracy-sra-doc/docs/data-processing/useful-data",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/tracywong117/tracy-sra-doc/tree/main/docs/data-processing/useful-data.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "2. Download study data",
+                "permalink": "/tracy-sra-doc/docs/data-processing/download-study-data"
+              },
+              "next": {
+                "title": "4. Data Curation",
+                "permalink": "/tracy-sra-doc/docs/data-processing/data-curation"
+              }
+            },
+            {
+              "id": "intro",
+              "title": "Tracy SRA",
+              "description": "This project is a search engine for SRA metadata on NCBI. It consists of two parts: a frontend Vue application and a backend Flask application.",
+              "source": "@site/docs/intro.md",
+              "sourceDirName": ".",
+              "slug": "/intro",
+              "permalink": "/tracy-sra-doc/docs/intro",
+              "draft": false,
+              "unlisted": false,
+              "editUrl": "https://github.com/tracywong117/tracy-sra-doc/tree/main/docs/intro.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "Data Processing",
+                "permalink": "/tracy-sra-doc/docs/category/data-processing"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "doc",
+                "id": "intro"
+              },
+              {
+                "type": "category",
+                "label": "Data Processing",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "data-processing/download-ncbi-sra-metadata"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "data-processing/download-study-data"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "data-processing/useful-data"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "data-processing/data-curation"
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "description": "Prepare the SRA metadata",
+                  "slug": "/category/data-processing",
+                  "permalink": "/tracy-sra-doc/docs/category/data-processing"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [],
+      "blogListPaginated": [],
+      "blogTags": {},
+      "blogTagsListPath": "/tracy-sra-doc/blog/tags",
+      "blogTagsPaginated": []
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/tracy-sra-doc/",
+        "source": "@site/src/pages/index.js"
+      },
+      {
+        "type": "mdx",
+        "permalink": "/tracy-sra-doc/markdown-page",
+        "source": "@site/src/pages/markdown-page.md",
+        "title": "Markdown page example",
+        "description": "You don't need React to write simple standalone pages.",
+        "frontMatter": {
+          "title": "Markdown page example"
+        },
+        "unlisted": false
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-theme-classic": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}
